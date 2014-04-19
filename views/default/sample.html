@@ -1,0 +1,113 @@
+<html>
+<head>
+	
+
+</head>
+<body>
+<table id="myTable" class="tablesorter" >
+	<thead>
+	<tr>
+		<th><strong>From</strong></th>
+		<th><strong>Destination</strong></th>
+		<th><strong>Road Distance (km)</strong></th>
+		<th><strong>By Air (hrs)</strong></th>
+		<th><strong>By Car/Coach (hrs)</strong></th>
+		<th><strong>By Rail (hrs)</strong></th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td><strong>Sydney</strong></td>
+		<td>Adelaide</td>
+		<td>1412</td>
+
+		<td>1.4</td>
+		<td>24</td>
+		<td>25.3</td>
+	</tr>
+
+	<tr>
+		<td><strong>Sydney</strong></td>
+		<td>Brisbane</td>
+		<td>982</td>
+		<td>1.5</td>
+
+		<td>17</td>
+		<td>16</td>
+	</tr>
+
+	<tr>
+		<td><strong>Sydney</strong></td>
+		<td>Canberra</td>
+		<td>286</td>
+		<td>.6</td>
+		<td>4.2</td>
+
+		<td>4.3</td>
+	</tr>
+
+	<tr>
+		<td><strong>Sydney</strong></td>
+		<td>Melbourne</td>
+		<td>872</td>
+		<td>1.1</td>
+		<td>14.3</td>
+		<td>10.5</td>
+
+	</tr>
+
+	<tr>
+		<td><strong>Adelaide</strong></td>
+		<td>Perth</td>
+		<td>2781</td>
+		<td>3.1</td>
+		<td>35</td>
+		<td>38</td>
+	</tr>
+
+	<tr>
+		<td><strong>Adelaide</strong></td>
+		<td>Alice Springs</td>
+		<td>1533</td>
+		<td>2</td>
+		<td>20</td>
+		<td>20.25</td>
+	</tr>
+
+	<tr>
+		<td><strong>Adelaide</strong></td>
+
+		<td>Brisbane</td>
+		<td>2045</td>
+		<td>2.15</td>
+		<td>33.3</td>
+		<td>40</td>
+	</tr>
+	</tbody>
+</table>				
+<script type="text/javascript" src="jquery-latest.js"></script> 
+<script type="text/javascript" src="jquery.tablesorter.js"></script> 
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+	var recapFilters = {
+		sort_select: true,
+		loader: true,
+		col_0: "select", 
+		col_1: "select",
+		col_2: "select",
+		col_3: "select",
+		col_4: "select",
+		on_change: true,
+		display_all_text: " [ Select ] ",
+		rows_counter: true,
+		btn_reset: true,
+		alternate_rows: true,
+		col_width: ["210px","210px","210px","210px","210px"]
+	}
+	setFilterGrid("recap",recapFilters);
+//]]>
+</script>
+
+
+</body>
+</html>

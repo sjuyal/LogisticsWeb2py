@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Alpha Centauri</title>
+
+   <script src="{{=URL('static','js1/google-code-prettify/prettify.css')}}"></script>
+   <link rel="shortcut icon" href="{{=URL('static','images/favicon.ico')}}" type="image/x-icon">
+   <link rel="apple-touch-icon" href="{{=URL('static','images/favicon.png')}}">
+   <link href="{{=URL('static','css1/bootstrap.css')}}" rel="stylesheet">
+   <link href="{{=URL('static','css1/bootstrap-responsive.css')}}" rel="stylesheet">
+   <link href="{{=URL('static','css1/docs.css')}}" rel="stylesheet">
+   <link href="{{=URL('static','js1/google-code-prettify/prettify.css')}}" rel="stylesheet">
+  <!-- include stylesheets -->
+  {{
+  response.files.insert(0,URL('static','css1/bootstrap.css'))
+  response.files.insert(1,URL('static','css1/bootstrap-responsive.css'))
+  response.files.insert(2,URL('static','css1/docs.css'))
+  response.files.insert(3,URL('static','js1/google-code-prettify/prettify.css'))
+  }}
+
+</head>
+<body data-spy="scroll" data-target=".bs-docs-sidebar" style="height: 94%">
+
+	<!-- Navbar
+    ================================================== -->
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<button type="button" class="btn btn-navbar" data-toggle="collapse"
+					data-target=".nav-collapse">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="brand" href="#">Courier Logistics</a>
+                <div class="nav-collapse collapse" style="float:left">
+                        <a class="brand" href="#">Home</a>
+						<a class="brand" href="#">About</a>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="wrap">
+
+		<div class="jumbotron masthead">
+			<div class="container">
+				<h1>Courier Logistics</h1>
+				<p>Trial Version</p>
+				<br>
+				<br>
+				<br>
+				<p>
+					<a href="/FirstApp/default/user/register?_next=/FirstApp/default/home" class="btn btn-primary btn-large">Sign Up</a>
+
+					<a href="/FirstApp/default/user/login?_next=/FirstApp/default/home" class="btn btn-primary btn-large">Login !!</a>
+				</p>
+
+
+				<ul class="masthead-links">
+					<li><a href="#">What is this??</a></li>
+					<li>Version 1.0</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+	<div id="footer">
+		<div class="container" align="center">
+			<p class="muted credit">
+				Designed and Created By Shashank Juyal and Kulvinder Bisla</a>
+			</p>
+		</div>
+	</div>
+	<script src="{{=URL('static','assets/js/jquery.js')}}"></script>
+	<script type="text/javascript"
+		src="http://platform.twitter.com/widgets.js"></script>
+	<script src="{{=URL('static','assets/js/bootstrap-transition.js')}}"></script>
+	<script src="{{=URL('static','assets/js/bootstrap-alert.js')}}"></script>
+	<script src="{{=URL('static','assets/js/bootstrap-modal.js')}}"></script>
+	<script src="{{=URL('static','assets/js/bootstrap-dropdown.js')}}"></script>
+	<script src="{{=URL('static','assets/js/bootstrap-scrollspy.js')}}"></script>
+	<script src="{{=URL('static','assets/js/bootstrap-tab.js')}}"></script>
+	<script src="{{=URL('static','assets/js/bootstrap-tooltip.js')}}"></script>
+	<script src="{{=URL('static','assets/js/bootstrap-popover.js')}}"></script>
+	<script src="{{=URL('static','assets/js/bootstrap-button.js')}}"></script>
+	<script src="{{=URL('static','assets/js/bootstrap-collapse.js')}}"></script>
+	<script src="{{=URL('static','assets/js/bootstrap-carousel.js')}}"></script>
+	<script src="{{=URL('static','assets/js/bootstrap-typeahead.js')}}"></script>
+	<script src="{{=URL('static','assets/js/bootstrap-affix.js')}}"></script>
+	<script src="{{=URL('static','assets/js/holder/holder.js')}}"></script>
+	<script src="{{=URL('static','assets/js/google-code-prettify/prettify.js')}}"></script>
+	<script src="{{=URL('static','assets/js/application.js')}}"></script>
+</body>
+</html>

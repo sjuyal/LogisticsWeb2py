@@ -1,0 +1,36 @@
+{{extend 'layouttrack.html'}}
+
+<h2></h2>
+<form enctype="multipart/form-data"
+      action="{{=URL()}}" method="post">
+Enter Product ID to Track:<br><br>
+<input name="prodid" /><br><br><br>
+<input type="submit" /><br><br>
+</form>
+<div align="center">
+    
+{{if flag!="":}}
+    {{=msg}}<br><br><br><br>
+    {{temp=0;listlen=len(l);count=0}}
+    {{for item in l:}}
+        {{count=count+1;}}
+        {{if item==current:}}
+            {{temp=1;}}
+            <span class="alert alert-success"  style="background-color:green;color:white">{{=item}}</span>
+            {{if count!=listlen:}}
+                <img src="{{=URL('static','img/arrow.png')}}" alt="" width="20" height="20">
+            {{pass}}
+        {{elif temp==1:}}
+            <span class="alert alert-warning" style="color:gray">{{=item}}</span>
+            {{if count!=listlen:}}
+                <img src="{{=URL('static','img/arrow.png')}}" alt="" width="20" height="20">
+            {{pass}}
+        {{elif temp==0:}}
+            <span class="alert alert-success">{{=item}}</span>
+            {{if count!=listlen:}}
+                <img src="{{=URL('static','img/arrow.png')}}" alt="" width="20" height="20">
+            {{pass}}
+        {{pass}}
+    {{pass}}
+{{pass}}
+ </div>

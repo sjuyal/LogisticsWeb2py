@@ -1,0 +1,124 @@
+<!--[if HTML5]><![endif]-->
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="ie ie6 ie-lte9 ie-lte8 ie-lte7 no-js" lang="{{=T.accepted_language or 'en'}}"> <![endif]-->
+<!--[if IE 7]><html class="ie ie7 ie-lte9 ie-lte8 ie-lte7 no-js" lang="{{=T.accepted_language or 'en'}}"> <![endif]-->
+<!--[if IE 8]><html class="ie ie8 ie-lte9 ie-lte8 no-js" lang="{{=T.accepted_language or 'en'}}"> <![endif]-->
+<!--[if IE 9]><html class="ie9 ie-lte9 no-js" lang="{{=T.accepted_language or 'en'}}"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="{{=T.accepted_language or 'en'}}"> <!--<![endif]-->
+<head>
+<title>{{=response.title or request.application}}</title>
+  <!--[if !HTML5]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge{{=not request.is_local and ',chrome=1' or ''}}">
+  <![endif]-->
+  <!-- www.phpied.com/conditional-comments-block-downloads/ -->
+  <!-- Always force latest IE rendering engine
+       (even in intranet) & Chrome Frame
+       Remove this if you use the .htaccess -->
+	   
+  <meta charset="utf-8" />
+
+  <!-- http://dev.w3.org/html5/markup/meta.name.html -->
+  <meta name="application-name" content="{{=request.application}}" />
+
+  <!-- Speaking of Google, don't forget to set your site up:
+       http://google.com/webmasters -->
+  <meta name="google-site-verification" content="" />
+
+  <!--  Mobile Viewport Fix
+        j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag
+        device-width: Occupy full width of the screen in its current orientation
+        initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+        user-scalable = yes allows the user to zoom in -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+   <link rel="shortcut icon" href="{{=URL('static','images/favicon.ico')}}" type="image/x-icon">
+   <link rel="apple-touch-icon" href="{{=URL('static','images/favicon.png')}}">
+
+<link href="../static/css1/bootstrap.css" rel="stylesheet">
+<link href="../static/css1/bootstrap-responsive.css" rel="stylesheet">
+<link href="../static/css1/docs.css" rel="stylesheet">
+<link href="../static/js1/google-code-prettify/prettify.css" rel="stylesheet">
+  <!-- include stylesheets -->
+  {{
+  response.files.insert(0,URL('static','css1/bootstrap.css'))
+  response.files.insert(1,URL('static','css1/bootstrap-responsive.css'))
+  response.files.insert(2,URL('static','css1/docs.css'))
+  response.files.insert(3,URL('static','js1/google-code-prettify/prettify.css'))
+  }}
+
+</head>
+<body data-spy="scroll" data-target=".bs-docs-sidebar" style="height: 94%">
+
+	<!-- Navbar
+    ================================================== -->
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<button type="button" class="btn btn-navbar" data-toggle="collapse"
+					data-target=".nav-collapse">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="brand" href="#">Buddha</a>
+				<div class="nav-collapse collapse">
+					<ul class="nav">
+						<li class=""><a href="#">Home</a></li>
+						<li class=""><a href="#">About</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="wrap">
+
+		<div class="jumbotron masthead">
+			<div class="container">
+				<h1>Project Buddha</h1>
+				<p>Trial Version</p>
+				<br>
+				<br>
+				<br>
+				<p>
+					<a href="signup.jsp" class="btn btn-primary btn-large">Sign Up</a>
+
+					<a href="login.jsp" class="btn btn-primary btn-large">Login !!</a>
+				</p>
+
+
+				<ul class="masthead-links">
+					<li><a href="#">What is this??</a></li>
+					<li>Version 1.0</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+	<div id="footer">
+		<div class="container" align="center">
+			<p class="muted credit">
+				Designed and Created By Shashank Juyal and Kulvinder Bisla</a>
+			</p>
+		</div>
+	</div>
+	<script src="{{=URL('static','assets/js/jquery.js')}}"></script>
+	<script type="text/javascript"
+		src="http://platform.twitter.com/widgets.js"></script>
+	<script src="{{=URL('static','assets/js/bootstrap-transition.js')}}"></script>
+	<script src="{{=URL('static','assets/js/bootstrap-alert.js')}}"></script>
+	<script src="{{=URL('static','assets/js/bootstrap-modal.js')}}"></script>
+	<script src="{{=URL('static','assets/js/bootstrap-dropdown.js')}}"></script>
+	<script src="{{=URL('static','assets/js/bootstrap-scrollspy.js')}}"></script>
+	<script src="{{=URL('static','assets/js/bootstrap-tab.js')}}"></script>
+	<script src="{{=URL('static','assets/js/bootstrap-tooltip.js')}}"></script>
+	<script src="{{=URL('static','assets/js/bootstrap-popover.js')}}"></script>
+	<script src="{{=URL('static','assets/js/bootstrap-button.js')}}"></script>
+	<script src="{{=URL('static','assets/js/bootstrap-collapse.js')}}"></script>
+	<script src="{{=URL('static','assets/js/bootstrap-carousel.js')}}"></script>
+	<script src="{{=URL('static','assets/js/bootstrap-typeahead.js')}}"></script>
+	<script src="{{=URL('static','assets/js/bootstrap-affix.js')}}"></script>
+	<script src="{{=URL('static','assets/js/holder/holder.js')}}"></script>
+	<script src="{{=URL('static','assets/js/google-code-prettify/prettify.js')}}"></script>
+	<script src="{{=URL('static','assets/js/application.js')}}"></script>
+</body>
+</html>

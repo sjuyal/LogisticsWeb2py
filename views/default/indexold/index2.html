@@ -1,0 +1,16 @@
+{{('message' in globals())}}
+{{extend 'layout.html'}}
+
+{{if 'message' in globals():}}
+<h3>{{=message}}</h3>
+
+<ol>
+  <li>Please <a href="/FirstApp/default/user/register?_next=/FirstApp/default/index" >Register</a></li>
+  <li>If already registered, Please <a href="/FirstApp/default/user/login?_next=/FirstApp/default/index" >Login</a> to continue</li>
+  <li>To Recover Password <a href="/FirstApp/default/user/request_reset_password/?_next=/FirstApp/default/index" >Click Here</a></li>
+</ol>
+{{elif 'content' in globals():}}
+{{=content}}
+{{else:}}
+{{=BEAUTIFY(response._vars)}}
+{{pass}}
